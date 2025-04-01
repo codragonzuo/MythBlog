@@ -1,7 +1,6 @@
 'use client';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import rehypeHighlight from 'rehype-highlight';
-import rehypeMathjax from 'rehype-mathjax';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 
@@ -18,7 +17,7 @@ const MDXPost = ({ post }: { post: Post }) => {
                 options={{
                     mdxOptions: {
                         remarkPlugins: [remarkMath],
-                        rehypePlugins: [rehypeKatex, rehypeHighlight, rehypeMathjax],
+                        rehypePlugins: [rehypeKatex, rehypeHighlight],
                     }
                 }}
             />
