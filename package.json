@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/github-slugger": "^2.0.0",
+    "@types/marked": "^6.0.0",
     "@types/node": "20.17.28",
     "@types/react": "19.0.12",
     "@types/react-dom": "^19",
